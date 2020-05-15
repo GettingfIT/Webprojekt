@@ -8,7 +8,7 @@ include('header.php');
                 <li><a href="index.php">Kezdőlap</a></li>
                 <li class="activeitem"><a href="calculator.php">Kalóriaszámláló és edzéstervek</a></li>
                 <li><a href="miniwebshop.php">Mini webshop</a></li>
-                <li><a href="">Rólunk</a></li>
+                <li><a href="about.html">Rólunk</a></li>
             </ul>
         </nav>
 

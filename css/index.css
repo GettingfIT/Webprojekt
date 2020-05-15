@@ -185,19 +185,15 @@ li a:hover {
 }
 
 
-/**********************/
-
-
 /*     14. Footer     */
-
-
-/**********************/
 
 .footer {
     padding-top: 5rem;
     background-color: #262431;
     margin-left: 50px;
     margin-right: 50px;
+    position: relative;
+    clear: both;
 }
 
 .footer .footer-col {
@@ -262,6 +258,11 @@ li a:hover {
     padding-bottom: 0.5rem;
     background-color: #FF7F00;
     text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
 }
 
 .copyright .p-small {

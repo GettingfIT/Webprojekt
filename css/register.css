@@ -1,6 +1,6 @@
 body {
     color: #fff;
-    background-image: url(img/b4.jpg);
+    background-image: url(../img/b3.jpg);
     font-family: 'Roboto', sans-serif;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -14,7 +14,7 @@ body {
 }
 
 .form-control:focus {
-    border-color: #5cb85c;
+    border-color: #FF7F00;
 }
 
 .form-control,
@@ -39,7 +39,7 @@ body {
 .signup-form h2:after {
     content: "";
     height: 2px;
-    width: 30%;
+    width: 25%;
     background: #d4d4d4;
     position: absolute;
     top: 50%;
@@ -47,11 +47,11 @@ body {
 }
 
 .signup-form h2:before {
-    left: 0;
+    left: 0px;
 }
 
 .signup-form h2:after {
-    right: 0;
+    right: 0px;
 }
 
 .signup-form .hint-text {
@@ -102,14 +102,15 @@ body {
 }
 
 .signup-form form a {
-    color: #5cb85c;
+    color: #FF7F00;
     text-decoration: none;
 }
 
 .signup-form form a:hover {
     text-decoration: underline;
 }
-    .button {
+
+.button {
     background-color: #FF7F00;
     align-items: center;
     background-image: linear-gradient(to bottom, #FF7F27 0, #FF4A00 100%);

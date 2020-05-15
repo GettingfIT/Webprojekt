@@ -1,5 +1,5 @@
 <?php
-include('header.php');
+include 'header.php';
 ?>
 <header class="header-section">
     <div class="container-fluid">
@@ -14,8 +14,8 @@ include('header.php');
 
         <div class="header-right">
             <div id="user-access">
-                <a href="register.html">Regisztrálj</a>
-                <a href="login.html">Bejelenkezés</a>
+                <a href="register.php">Regisztrálj</a>
+                <a href="login.php">Bejelenkezés</a>
             </div>
         </div>
     </div>
@@ -29,29 +29,29 @@ include('header.php');
     <div class="slideshow-container">
 
         <!-- Full-width images with number-->
-        <div class="mySlides">
+        <div class="mySlide">
             <div class="numbertext">1 / 4</div>
             <img src="img/slideshow/slide1.jpg">
         </div>
 
-        <div class="mySlides">
+        <div class="mySlide">
             <div class="numbertext">2 / 4</div>
             <img src="img/slideshow/slide2.jpg">
         </div>
 
-        <div class="mySlides">
+        <div class="mySlide">
             <div class="numbertext">3 / 4</div>
             <img src="img/slideshow/slide3.jpg">
         </div>
 
-        <div class="mySlides">
+        <div class="mySlide">
             <div class="numbertext">4 / 4</div>
             <img src="img/slideshow/slide4.png">
         </div>
 
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="minusSlide(1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)">&#10095;</a>
     </div>
     <br>
 
@@ -76,10 +76,10 @@ include('header.php');
             <p class="fs-26 flex-c">COMING SOON</p>
         </section>
     </div>
-    <br><br><br><br><br><br><br>
+    
 
 
     <script src="js/slideshow.js"></script>
 <?php
-include('footer.php');
+include 'footer.php';
 ?>

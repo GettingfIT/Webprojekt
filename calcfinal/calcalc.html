@@ -1,0 +1,32 @@
+<DOCTYPE html>
+<html>
+<head>
+  <link href="css/calcCSS.css" rel="stylesheet">
+  <script src="jsCALC.js"></script>
+</head>
+<body>
+<h1>Töltse ki az alábbi mezőket!</h1>
+<label>Nő:
+  <input id="female" type="radio" name="gender" onchange="calsPerDay()">
+</label>
+<label>Férfi:
+  <input id="male" type="radio" name="gender" onchange="calsPerDay()" checked>
+</label>
+<label>Kor:
+  <input id="age" type="number" oninput="calsPerDay()" value="50">
+  évek
+</label>
+<label>Magasság:
+  <input id="height" type="number" oninput="calsPerDay()" value="70">
+  centiméterekben
+</label>
+<label>Súly:
+  <input id="weight" type="number" oninput="calsPerDay()" value="225">
+  kilogrammokban
+</label>
+<label>
+  Az ön metabolizmus: <span id="totalCals"></span> Napi kcal bevitel
+</label>
+
+</body>
+</html>

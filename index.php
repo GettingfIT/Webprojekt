@@ -14,7 +14,7 @@ include 'header.php';
 
         <div class="header-right">
             <div id="user-access">
-                <a href="register.php">Regisztrálj</a>
+                <a href="register.php">Regisztráció</a>
                 <a href="login.php">Bejelenkezés</a>
             </div>
         </div>
@@ -48,19 +48,15 @@ include 'header.php';
             <div class="numbertext">4 / 4</div>
             <img src="img/slideshow/slide4.png">
         </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="minusSlide(1)">&#10094;</a>
-        <a class="next" onclick="plusSlide(1)">&#10095;</a>
     </div>
     <br>
 
     <!-- The dots/circles -->
     <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
     </div>
 
 

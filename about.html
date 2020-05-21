@@ -1,90 +1,93 @@
 <!DOCTYPE html>
-<html>
 
 <head>
     <meta charset="UTF-8">
-    <title>Rólunk</title>
-    <link rel="icon" href="img/logo.png">
-    <link href="css/main.css" rel="stylesheet">
-    <link href="css/util.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GettingFIT</title>
     <link href="css/about.css" rel="stylesheet">
+    <link href="css/util.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
 <header class="header-section">
     <div class="container-fluid">
         <nav class="main-menu">
             <ul>
-                <li><a href="index.html">Kezdőlap</a></li>
-                <li><a href="report2.html">Kalóriaszámláló és edzéstervek</a></li>
-                <li><a href="people.html">Mini webshop</a></li>
-                <li class="active"><a href="about.html">Rólunk</a></li>
+                <li><a href="index.php">Kezdőlap</a></li>
+                <li class="activeitem"><a href="calculator.php">Kalóriaszámláló és edzéstervek</a></li>
+                <li><a href="miniwebshop.php">Mini webshop</a></li>
+                <li><a href="about.html">Rólunk</a></li>
             </ul>
         </nav>
 
         <div class="header-right">
             <div id="user-access">
-                <a href="register.html">Regisztrálj</a>
-                <a href="login.html">Bejelenkezés</a>
+                <a href="register.php">Regisztráláció</a>
+                <a href="login.php">Bejelenkezés</a>
             </div>
         </div>
     </div>
 </header>
 
 <body>
-    <div class="about">
-      
-        <div class="infoMainDiv">
-            <img src="img/aboutppl/alex.jpg" id="aleximg"  class="border border-warning rounded">
-            <table>
-                <tr>
-                    <td class="orange">Vezetéknév</td>
-                    <td class="orange">Fejes</td>
-                </tr>
-                <tr>
-                    <td class="orange">Keresztnév</td>
-                    <td class="orange">Alex</td>
-                </tr>
-                <tr>
-                    <td class="orange">Születési dátum</td>
-                    <td class="orange">1999/11/25</td>
-                </tr>
-                <tr>
-                    <td class="orange">Születési hely</td>
-                    <td class="orange"> Szabadka, Vajdaság</td>
-                </tr>
-                <tr>
-                    <td class="orange">Nem</td>
-                    <td class="orange">Férfi</td>
-                </tr>
+    <div class="about container row text-md-center">
+        <div class="infoMainDiv col-6">
+            <img src="img/aboutppl/alex.jpg" id="aleximg" class="border border-warning rounded">
+            <table class="align-content-md-stretch mx-lg-auto">
+                <tbody>
+                    <tr>
+                        <td class="orange">Vezetéknév</td>
+                        <td class="orange">Fejes</td>
+                    </tr>
+                    <tr>
+                        <td class="orange">Keresztnév</td>
+                        <td class="orange">Alex</td>
+                    </tr>
+                    <tr>
+                        <td class="orange">Születési dátum</td>
+                        <td class="orange">1999/11/25</td>
+                    </tr>
+                    <tr>
+                        <td class="orange">Születési hely</td>
+                        <td class="orange"> Szabadka, Vajdaság</td>
+                    </tr>
+                    <tr>
+                        <td class="orange">Nem</td>
+                        <td class="orange">Férfi</td>
+                    </tr>
+                </tbody>
             </table>
-            <p class="orange">Gépész szakon fejezett az Ivan Saric Műszaki Középiskolában. Jelenleg a VTS-n másodéves hallgató az elektronikus ügyvitel szakon.</p>
+            <p class="orange text-center">Gépész szakon fejezett az Ivan Saric Műszaki Középiskolában. Jelenleg a VTS-n másodéves hallgató az elektronikus ügyvitel szakon.</p>
         </div>
         <br>
-        <div class="infoMainDiv">
+        <div class="infoMainDiv col-6">
             <img src="img/aboutppl/joros.jpg" id="jorosimg" class="border border-primary rounded">
-            <table>
-                <tr>
-                    <td class="orange">Vezetéknév</td>
-                    <td class="orange">Majoros</td>
-                </tr>
-                <tr>
-                    <td class="orange">Keresztnév</td>
-                    <td class="orange">Norbert</td>
-                </tr>
-                <tr>
-                    <td class="orange">Születési dátum</td>
-                    <td class="orange">1999/08/30</td>
-                </tr>
-                <tr>
-                    <td class="orange">Születési hely</td>
-                    <td class="orange">Szabadka, Vajdaság</td>
-                </tr>
-                <tr>
-                    <td class="orange">Nem</td>
-                    <td class="orange">Férfi</td>
-                </tr>
+            <table class="align-content-md-stretch mx-lg-auto">
+                <tbody>
+                    <tr>
+                        <td class="orange">Vezetéknév</td>
+                        <td class="orange">Majoros</td>
+                    </tr>
+                    <tr>
+                        <td class="orange">Keresztnév</td>
+                        <td class="orange">Norbert</td>
+                    </tr>
+                    <tr>
+                        <td class="orange">Születési dátum</td>
+                        <td class="orange">1999/04/13</td>
+                    </tr>
+                    <tr>
+                        <td class="orange">Születési hely</td>
+                        <td class="orange">Szabadka, Vajdaság</td>
+                    </tr>
+                    <tr>
+                        <td class="orange">Nem</td>
+                        <td class="orange">Férfi</td>
+                    </tr>
+                </tbody>
             </table>
-            <p class="orange"> Gépész szakon fejezett az Ivan Saric Műszaki Középiskolában. Jelenleg a VTS-n másodéves hallgató az elektronikus ügyvitel szakon.</p>
+            <p class="orange text-center"> Gépész szakon fejezett az Ivan Saric Műszaki Középiskolában. Jelenleg a VTS-n másodéves hallgató az elektronikus ügyvitel szakon.</p>
         </div>
     </div>
 </body>

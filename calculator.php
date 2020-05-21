@@ -8,13 +8,13 @@ include('header.php');
                 <li><a href="index.php">Kezdőlap</a></li>
                 <li class="activeitem"><a href="calculator.php">Kalóriaszámláló és edzéstervek</a></li>
                 <li><a href="miniwebshop.php">Mini webshop</a></li>
-                <li><a href="">Rólunk</a></li>
+                <li><a href="about.html">Rólunk</a></li>
             </ul>
         </nav>
 
         <div class="header-right">
             <div id="user-access">
-                <a href="register.php">Regisztrálj</a>
+                <a href="register.php">Regisztráció</a>
                 <a href="login.php">Bejelenkezés</a>
             </div>
         </div>
@@ -23,8 +23,8 @@ include('header.php');
 <script src="js/jsCALC.js"></script>
 
 <body>
-    <div class="content pt-3 pb-3 rounded">
-        <form class="form-control col-md-4 offset-md-4">
+    <div class="pt-3 pb-3 rounded">
+        <form class="form-control col-md-4 offset-md-4 orangebg">
             <h1 class="text-center">Töltse ki az alábbi mezőket!</h1>
             <h4 class="text-center">Kalória számláló</h4>
             <div class="form-group">
@@ -34,9 +34,9 @@ include('header.php');
                 <input id="male" type="radio" name="gender" onchange="calsPerDay()" checked>
             </div>
             <div class="form-group">
-                <label>Kor:</label>
+                <label>Kor:
                 <input id="age" type="number" oninput="calsPerDay()" value="21">
-                év
+                év</label>
             </div>
             <div class="form-group">
                 <label>Magasság:
@@ -47,10 +47,10 @@ include('header.php');
             <div class="form-group">
                 <label for="weight">Súly:</label>
                 <input id="weight" type="number" oninput="calsPerDay()" value="80">
-                kilogrammokban
+                <p class="white">kilogrammokban</p>
                 <label>
             </div>
-            Az ön metabolizmus: <span id="totalCals"></span> Napi kcal bevitel
+            <p class="white">Az ön metabolizmus: <span id="totalCals"></span> Napi kcal bevitel</p>
             </label>
         </form>
     </div>

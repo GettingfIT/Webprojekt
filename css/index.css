@@ -145,7 +145,6 @@ li a:hover {
   background-color: white;
   margin-left: 50px;
   margin-right: 50px;
-  border-radius: 5%;
 }
 
 .store-info,
@@ -304,7 +303,6 @@ div.dropdown-content a:hover {
 .div-product {
   margin-top: 20px;
   border: 1px solid #111;
-  border-radius: 5%;
   width: 400px;
   margin-left: 20px;
   justify-content: center;
@@ -343,10 +341,10 @@ div.dropdown-content a:hover {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding: 6px;
 }
-.weight{
-    padding: 6px;
-    text-decoration: underline;
-    font-size: 12;
+.weight {
+  padding: 6px;
+  text-decoration: underline;
+  font-size: 12;
 }
 .checkout {
   margin: auto;
@@ -380,6 +378,76 @@ div#man-beginner {
 div#man-advanced {
   display: none;
 }
-.set{
-    font-weight: bolder;
+.set {
+  font-weight: bolder;
+}
+@media only screen and (max-width: 678px) {
+  nav,
+  .product {
+    flex-direction: column;
+  }
+  ul {
+    flex-wrap: wrap;
+  }
+
+  .product-pic {
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .div2,
+  .div3,
+  .div2-admin,
+  .div-termekek,
+  .div-termekek-admin,
+  .leiras,
+  .nev,
+  .ar {
+    width: 100%;
+  }
+  .div-termekek {
+    border: none;
+  }
+}
+
+/*admin miniwebshop*/
+.div-product-admin {
+  margin-top: 20px;
+  border: 1px solid #111;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-content: center;
+}
+.product-pic-admin {
+  width: 200px;
+  height: 200px;
+}
+.name-admin,
+.description-admin,
+.price-admin,
+.weight-admin {
+  display: block;
+  width: auto;
+  text-align: justify;
+}
+.product-admin {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+.description-admin {
+  width: 50%;
+}
+.button-place {
+  position: relative;
+  display: block;
+}
+.div2-admin {
+  border: 1px solid #000;
+  justify-content: center;
+  align-items: center;
+}
+.siker {
+  color: green;
 }

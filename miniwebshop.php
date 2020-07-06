@@ -70,13 +70,21 @@ if (mysqli_num_rows($result) > 0) {
                     <p class='price'>"  . $row["product_price"] . "€.</p>
                     <p class='weight'>" . $row["product_weight"] . "kg.</p>
                     <span class='description'>" . $row["product_desc"] . "</span>
+                    <form class='gombok' method='GET'>
+                    <button type='submit' alt='control' name='order' value='" . $row["product_id"] . "'>Order</button>
+                    </form>
                     </div>
                     ";
                 }
-
+                if($_GET['order']){
+                    $sql="INSERT INTO orders(orderid,product_id,userid,order_date) VALUES(null, product_id, $username ,now())";
+                    mysqli_query($db,$sql);
+                }
+                else{
+                    echo 'Hibas';
+                }
             ?>
             </div>
-            <button class="checkout">CHECKOUT</button>
     </div>
     <br>
 <?php

@@ -1,5 +1,6 @@
 <?php
-include 'header.php';
+include('header.php');
+include('server.php');
 ?>
 <header class="header-section">
     <div class="container-fluid">
@@ -14,68 +15,61 @@ include 'header.php';
 
         <div class="header-right">
             <div id="user-access">
-                <a href="register.php">Regisztráció</a>
-                <a href="login.php">Bejelenkezés</a>
+                <?php if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
+                    echo '<div class="dropdown">';
+                    echo '<a class="u-name">';
+                    echo strtoupper($_SESSION["username"]);
+                    echo '</a>';
+                    echo '<div class="dropdown-content">
+                        <a href="logout.php">Logout</a>
+                    </div>';
+                    echo '</div>';
+                ?>
             </div>
+        <?php } else { ?>
+            <a href="register.php">Regisztráció</a>
+            <a href="login.php">Bejelenkezés</a>
+        <?php } ?>
         </div>
     </div>
 </header>
+
 <body>
     <div class="main_text">
         <p>Kezd el a fitness karriered <span class="orange">itt!</span></p>
     </div>
-
     <!-- Slideshow container -->
     <div class="slideshow-container">
 
         <!-- Full-width images with number-->
         <div class="mySlide">
-            <div class="numbertext">1 / 4</div>
-            <img src="img/slideshow/slide1.jpg">
+            <a href="miniwebshop.php"><img src="img/slideshow/slide1.jpg"></a>
         </div>
 
         <div class="mySlide">
-            <div class="numbertext">2 / 4</div>
-            <img src="img/slideshow/slide2.jpg">
+            <a href="miniwebshop.php"><img src="img/slideshow/slide2.jpg"></a>
         </div>
 
         <div class="mySlide">
-            <div class="numbertext">3 / 4</div>
-            <img src="img/slideshow/slide3.jpg">
+            <a href="miniwebshop.php"><img src="img/slideshow/slide3.jpg"></a>
         </div>
 
         <div class="mySlide">
-            <div class="numbertext">4 / 4</div>
-            <img src="img/slideshow/slide4.png">
+            <a href="miniwebshop.php"><img src="img/slideshow/slide4.png"></a>
         </div>
     </div>
     <br>
-
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-    </div>
-
-
-    <center>
-
-    </center>
     </div>
 
     <div class="content">
-
-        
-        <section class="store-info py-lg-4 py-md-4 py-sm-3 py-3" id="service">
-            <p class="fs-26 flex-c">COMING SOON</p>
-        </section>
+        <p class="txt-heading">Üdvözlünk oldalunkon!</p>
+        <p class="txt-content">E oldal, mint szemináriumi munkaként jött létre. Az oldalak használatához kötelező a bejelentkezés, illetve, ha nincs felhasználói fiók. Akkor könnyedén regisztálhathunk egy újat.</p>
+        <p class="txt-content">Mini webshopunkban különböző termékek találhatóak, Kalóriaszámláló oldalunkon pedig edzésterveket, étrendeket és nem utolsó sorban magát a Kalóriaszámlálót is itt találjuk.</p>
+        <p class="txt-content text-center txt-heading">Kellemes időtöltést kívánunk az oldalon! :)</p>
     </div>
-    
-
+    <br>
 
     <script src="js/slideshow.js"></script>
-<?php
-include 'footer.php';
-?>
+    <?php
+    include 'footer.php';
+    ?>

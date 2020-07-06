@@ -20,24 +20,22 @@ include_once('server.php');
 
 <body>
     <div class="signup-form">
-        <form action="login.php" method="post">
+        <form action="admin_login.php" method="post">
         <?php include('errors.php'); ?>
-            <h2>Bejelentkezés</h2>
-            <p class="hint-text">Adja meg a bejelentkezési adatokat!</p>
+            <h2>ADMIN</h2>
             <div class="form-group">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" name="username" placeholder="Username">
+                <input type="text" class="form-control" name="admin_username" placeholder="Username">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" name="password" placeholder="Jelszó">
+                <input type="password" class="form-control" name="admin_password" placeholder="Jelszó">
             </div>
             <div class="form-group">
-                <button type="submit" class="button" name="login_user">Bejelentkezés</button>
+                <button type="submit" class="button" name="login_admin">Bejelentkezés</button>
             </div>
         </form>
-        <div class="text-center">Vissza a <a href="register.php">Regisztrációhoz</a></div>
-        <div class="text-center"><a href="admin_login.php">ADMIN</a></div>
+        <div class="text-center">Vissza a <a href="login.php">Bejelentkezéshez</a></div>
     </div>
 </body>
 

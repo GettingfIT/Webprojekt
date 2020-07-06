@@ -77,13 +77,13 @@ if (mysqli_num_rows($result) > 0) {
                     </div>
                     ";
                 }
-                if(isset($_GET['submit'])){
+                /*if(isset($_GET['submit'])){
                     $sql="INSERT INTO orders VALUES(1,1, 1, NOW())";
                     mysqli_query($db,$sql);
                 }
                 else{
                     echo 'Hibas';
-                }
+                }*/
             ?>
             </div>
     </div>

@@ -383,8 +383,11 @@ div#man-advanced {
 }
 @media only screen and (max-width: 678px) {
   nav,
-  .product {
+  .product,
+  .header-right {
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
   }
   ul {
     flex-wrap: wrap;
@@ -398,15 +401,40 @@ div#man-advanced {
   .div2,
   .div3,
   .div2-admin,
-  .div-termekek,
-  .div-termekek-admin,
-  .leiras,
-  .nev,
-  .ar {
+  .div-product,
+  .div-product-admin,
+  .description,
+  .name,
+  .price,
+  .weight {
     width: 100%;
   }
-  .div-termekek {
+  .div-product {
     border: none;
+  }
+  .main_text {
+    font-size: 20px;
+    color: #000;
+    text-shadow: none;
+    text-align: center;
+  }
+  body {
+    background-image: none;
+  }
+  .header-section .main-menu ul li a {
+    color: #000;
+    font-size: 16px;
+  }
+  .header-right .user-access a {
+    display: block;
+    color: #000;
+    font-size: 16px;
+  }
+  div.mySlide img{
+    display: none;
+  }
+  .label p{
+    display: none;
   }
 }
 

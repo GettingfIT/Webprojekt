@@ -4,6 +4,7 @@ include('header.php');
 session_start();
 $query = "SELECT * FROM `products`";
 $result = mysqli_query($db, $query);
+$username=$_SESSION["username"];
 if (mysqli_num_rows($result) > 0) {
 ?>
     <header class="header-section">
@@ -39,7 +40,7 @@ if (mysqli_num_rows($result) > 0) {
     </header>
 
     <div class="content">
-            <p class="fs-26 flex-c p-t-12">MINI SHOP FITNESS ŐRÜLTEKNEK</p>
+            <p class="fs-26 text-center p-t-12 label">MINI SHOP FITNESS ŐRÜLTEKNEK</p>
             <div class='product'>
             <?php
             $results = false;
@@ -70,14 +71,14 @@ if (mysqli_num_rows($result) > 0) {
                     <p class='price'>"  . $row["product_price"] . "€.</p>
                     <p class='weight'>" . $row["product_weight"] . "kg.</p>
                     <span class='description'>" . $row["product_desc"] . "</span>
-                    <form class='gombok' method='GET'>
+                    <form class='buttons' method='POST'>
                     <button type='submit' alt='control' name='order' value='" . $row["product_id"] . "'>Order</button>
                     </form>
                     </div>
                     ";
                 }
-                if($_GET['order']){
-                    $sql="INSERT INTO orders(orderid,product_id,userid,order_date) VALUES(null, product_id, $username ,now())";
+                if(isset($_GET['submit'])){
+                    $sql="INSERT INTO orders VALUES(1,1, 1, NOW())";
                     mysqli_query($db,$sql);
                 }
                 else{

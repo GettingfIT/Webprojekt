@@ -2,9 +2,19 @@
 include('db_config.php');
 include('header.php');
 session_start();
+
+if (!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You must log in first";
+    header('location: login.php');
+}
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: login.php");
+}
+
 $query = "SELECT * FROM `products`";
 $result = mysqli_query($db, $query);
-$username=$_SESSION["username"];
 if (mysqli_num_rows($result) > 0) {
 ?>
     <header class="header-section">
